@@ -13,7 +13,7 @@
 + ZONE_ID——填写你要使用的、托管在cf中的域名的区域ID，具体位置请自行查阅
 + SUB_DOMAIN——填写你要添加A记录的子域名
 + REQUIRED_COUNT——填写你对该子域名要添加的A记录的数量，要求***整数***，默认为1
-+ TEST_SPEED——填写对A记录ip的速度要求，要求***整数***，默认为0
++ TEST_SPEED——填写对A记录ip速度最低要求，要求***整数***，默认为0
 + TEST_URL——填写CloudflareST.exe使用的测速URL，默认为[XIU2/CloudflareSpeedTest](https://github.com/XIU2/CloudflareSpeedTest/)的https://cf.xiu2.xyz/url ，可换成自建的测速URL，自建具体参考https://github.com/cmliu/CF-Workers-SpeedTestURL
 + POWERSHELL_NAME——填写系统中powershell目录下exe文件的名字，默认为pwsh（本人升级7版本时，默认为pwsh.exe），如果你已更改回powershell.exe，请更改此处为powershell
 ## 定时后台无感运行
