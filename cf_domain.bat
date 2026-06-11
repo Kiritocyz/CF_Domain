@@ -62,7 +62,7 @@ for /f "delims=" %%j in ('%POWERSHELL_NAME% -NoProfile -Command "(Get-Content 'c
 if defined dns_ips set "dns_ips=!dns_ips:~1!"
 
 echo Existing DNS IPs: !dns_ips!
-pause
+
 :: 选择测速工具
 if exist "CloudflareST.exe" (
     set "cfst=CloudflareST.exe"
@@ -188,7 +188,7 @@ if exist "curl_temp.json" del curl_temp.json
 
 :: 输出完成日志
 echo %date%, %time%: 域名 %SUB_DOMAIN% 的优选IP更新完毕，详见 cf_dns.csv。 >> cf_domain.log
-pause
+
 echo Done.
 goto :eof
 
